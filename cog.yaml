@@ -1,0 +1,18 @@
+build:
+  python_version: "3.7"
+  gpu: false
+  system_packages:
+    - flac
+    - git
+    - build-essential
+    - libpulse-dev
+    - libasound2-dev
+    - swig
+  python_packages:
+    - pip==21.2.4
+    - setuptools==57.4.0
+    - wheel==0.36.2
+    - SpeechRecognition==3.2.1
+    - pocketsphinx==0.1.10
+
+predict: "predict.py:RecognizeSpeech"
